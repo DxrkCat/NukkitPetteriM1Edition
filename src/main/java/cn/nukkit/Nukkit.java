@@ -89,8 +89,9 @@ public class Nukkit {
         InternalLoggerFactory.setDefaultFactory(Log4J2LoggerFactory.INSTANCE);
         ResourceLeakDetector.setLevel(ResourceLeakDetector.Level.PARANOID);
 
-        TITLE = options.has(titleSpec);
-
+        //TITLE = options.has(titleSpec);
+        TITLE = false;
+        
         String verbosity = options.valueOf(vSpec);
         if (verbosity == null) {
             verbosity = options.valueOf(verbositySpec);
